@@ -1,0 +1,479 @@
+stylesheet.css
+
+.menu-fixed{}
+
+.fade{
+  animation:fadeIn 3s ease-out 0s 1 normal;
+}
+
+@keyframes fadeIn {
+  0%{opacity: 0}
+  100%{opacity: 1}
+}
+
+header{
+  background-color: white;
+  width:100%;/*棒線あり*/
+  height: 123px;
+  padding: 1px;
+  display:block;
+  position:fixed;
+  top:0px;
+  z-index: 20
+}
+
+/*{.container}*/
+.container{
+  width:980px;
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+  display:block;
+}
+
+.container h1{/*{.header_logo}*/
+  margin: 0;
+  padding-top:15px;
+  width:105px;
+  height:100px;
+  float:left;
+}
+
+.container h1:hover{
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+.container ul{/*{.header_menu_buttons}*/
+  display:inline;
+  width:550px;
+  height:70px;
+  float:right;
+  padding-left:0;
+  margin:52px 0 0 0;
+  display:flex;/*ここで無理やり横並びにしてる*/
+}
+
+.container li{
+  display:inline;
+  float:left;
+  width:111px;
+  height:70px;
+  overflow:hidden;
+}
+
+.container li a{
+  display:block;
+  height:70px;
+}
+.container li a:hover img{
+  filter:alpha(opacity=70);
+  opacity:0.7;
+}
+
+.container li img{
+  margin:7px auto 0;
+  display:block;
+}
+/*{.container .sns-btn}*/
+.sns-btn{
+  position:absolute;
+  top: 8px;
+  right: 0;
+}
+
+.sns-btn img{
+  padding-left: 6px;
+}
+
+.sns-btn img:hover{
+  filter:alpha(opacity=70);
+  opacity:0.7;
+}
+/*{/.container .sns-btn}*/
+/*{/.container}*/
+
+/*{.section}*/
+section{
+  position: relative;
+}
+
+section .inner{
+  width: 980px;
+  margin:0 auto;
+  z-index: 2;
+  position:relative;
+}
+
+section .inner h1, section .inner h2, section .inner h3,section .inner h4,section .inner h5, section .inner h6{
+  margin:0;
+}
+/*{/.section}*/
+
+
+/*{.wrapper}*/
+/*{.wrapper-top "top"}*/
+.wrapper-top{
+  position:relative;
+}
+
+.wrapper-top section#top{
+  height:730px;
+  background-position: 60% top;/*{/.これの意味がわからない}*/
+  background-image:url(memo_bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+
+.inner h1{
+  text-align: center;
+  padding-top:110px;
+}
+
+.inner h2{
+  text-align: center;
+}
+
+.inner p{
+  text-align:center;
+  margin-top:5px;
+}
+/*{/.wrapper-top "top"}*/
+
+/*{.wrapper-top "about"}*/
+.wrapper-top section#about{
+  background-position:right center;
+  background-image: url(cafe_bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  min-height:567px;
+}
+
+.wrapper-top section#about .inner{
+  clear:both;
+}
+
+.wrapper-top section#about h2{
+  padding-top:170px;
+  padding-left:210px;
+  float:left;
+  margin:0;
+}
+
+.wrapper-top section#about h3{
+  padding-top: 195px;
+  padding-left: 70px;
+  float:left;
+  margin:0;
+}
+/*{/.wrapper-top "about"}*/
+
+/*{.wrapper-top "works"}*/
+.wrapper-top section#works{
+  height:730px;
+  background-position: 60% top;/*{/.これの意味がわからない}*/
+  background-image:url(memo_bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.wrapper-top section#works{
+  min-height: 1150px;
+  padding-bottom:80px;
+}
+
+
+
+.wrapper-top section#works h2{
+  padding-top:170px;
+  padding-left:210px;
+  float:left;
+  margin-top:-10px;
+  margin-bottom:80px;
+}
+
+.wrapper-top section#works h3{
+  padding-top: 195px;
+  padding-left: 70px;
+  float:left;
+  margin-top:-10px;
+  margin-bottom:80px;
+}
+
+.wrapper-top .section#works h2, .wrapper-top section#works h3{
+  line-height: 1;
+}
+
+.wrapper-top section#works .works_block{
+  margin-bottom:55px;
+  width:1000px;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.wrapper-top section#works .works_block .pure-u-1-4{
+  margin-bottom:55px;
+  width:210px;
+  padding-right:34px;
+}
+
+.wrapper-top section#works .works_block .pure-g{
+  margin-bottom:55px;
+  width:210px;
+  padding-right:35px;
+}
+
+/*{/.wrapper-top "works"}*/
+
+/*{.wrapper-top "blog"}*/
+.wrapper-top section#blog{
+  background-position: right center;
+  background-image: url(blog_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 567px;
+  margin-bottom: 12px;
+}
+
+.wrapper-top section#blog .inner{
+  clear:both;
+}
+
+.wrapper-top section#blog h2{
+  padding-top:170px;
+  padding-left: 210px;
+  float:left;
+  margin:0;
+}
+
+.wrapper-top section#blog h3{
+  padding-left:70px;
+  padding-top:195px;
+  float:left;
+  margin:0;
+}
+/*{/.wrapper-top "blog"}*/
+
+/*{.wrapper-top "contact"}*/
+.wrapper-top section#contact{
+  background-position: right center;
+  background-image: url(contact_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 567px;
+  margin-bottom: 12px;
+}
+
+.wrapper-top section#contact .inner{
+  clear:both;
+}
+
+.wrapper-top section#contact h2{
+  padding-top:170px;
+  padding-left: 210px;
+  float:left;
+  margin:0;
+}
+
+.wrapper-top section#contact h3{
+  padding-left:70px;
+  padding-top:195px;
+  float:left;
+  margin:0;
+}
+/*{.wrapper-top "contact"}*/
+
+/*{.wrapper-top "access"}*/
+.wrapper-top section#access{
+  height:630px;
+  background-position: 60% top;/*{/.これの意味がわからない}*/
+  background-image:url(memo_bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.wrapper-top section#access .map_cover{
+  position:relative;
+  width:945px;
+  height:300px;
+}
+
+.wrapper-top section#access .map_cover .map_url{
+  display: block;
+  width: 945px;
+  height:300px;
+}
+
+.wrapper-top section#access .map_cover .map{
+  padding:0 15px;
+  position: absolute;
+  top: 0;
+  left:0;
+  width:945px;
+  height:300px;
+  pointer-events: none;
+}
+
+.wrapper-top section#access .map_cover .map iframe{
+  border:3px black solid;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.wrapper-top section#access address{
+  font-family: 超極細ゴシック体;
+  font-style: normal;
+  padding:0 15px;
+}
+
+.wrapper-top section#access address h4{
+  margin:15px 0 10px -15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.wrapper-top section#access address p{
+  font-size: 1.2rem;
+  float: left;
+  margin:0;
+}
+/*{/.wrapper-top "access"}*/
+
+footer img{
+  width:100%;
+  vertical-align: bottom;
+  display: table-cell;
+}
+
+/*-----------------------------------------------------*/
+/*{その他}*/
+/*.works_block*/
+.works_block h4, .works_block h5{
+  display: table;
+  background-color:white;
+}
+
+.works_block h4{
+  font-size:10px;
+  font-size: 1.0rem;
+  font-weight:normal;
+  padding:0 3px;
+  margin-top:-3px;
+  margin-bottom:0px;
+}
+
+.works_block h4 a{
+  color:black;
+}
+
+.works_block h5{
+  font-size:7px;
+  font-size:0.7rem;
+  font-weight: normal;
+  padding: 2px 3px 0 3px;
+  margin:7px 7px 0 7px;
+}
+
+.works_block .capture{
+  width:210px;
+  height: 140px;
+  overflow:hidden;
+  position:relative;
+  margin-bottom: 6px;
+}
+
+.works_block .category{
+  display: inline;
+  background-color:black;
+  font-size: 7px;
+  font-size: 0.7rem;
+  padding: 5px 5px 3px 5px;
+  margin:0;
+  line-height: 1;
+  color:white;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.works_block .category a:link, .worksblock .category a:hover, .works_block .category a:visited{
+  color:white;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+.works_block .tag{
+  margin-top: 5px;
+}
+
+.works_block .tag h6{
+  display: inline;
+  background-color:rgba(225,225, 225, 0.53);
+  font-size:5px;
+  font-size:0.5rem;
+  font-weight: normal;
+  padding: 7px 4px 5px 5px;
+  margin-right:7px;
+}
+
+.works_block .tag h6 a:link, .works_block .tag h6 a:hover, .works_block .tag h6 a:visited{
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+.works_block .tag h6 a{
+  color:black;
+}
+/*/.works_block*/
+
+/*.more_ab_btn*/
+.more_ab_btn{
+  width:287px;
+  height:104px;
+  clear:both;
+  margin:0 auto;
+  background:url(more_wt_btn.png);
+  top:60px;
+  position:relative;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.more_ab_btn:hover{
+  background-position: left -112px;
+}
+
+.more_ab_btn a{
+  display:block;
+  width:287px;
+  height:104px;
+}
+/*/.more_ab_btn*/
+
+/*.more_wo_btn*/
+.more_bk_btn{
+  width:287px;
+  height:104px;
+  clear:both;
+  margin:0 auto;
+  background:url(more_wo_btn.png);
+  position:relative;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.more_bk_btn:hover{
+  background-position: left -112px;
+}
+
+.more_bk_btn a{
+  display:block;
+  width:287px;
+  height:104px;
+}
+/*.more_wo_btn*/
+/*/{その他}*/
+/*-----------------------------------------------------*/
